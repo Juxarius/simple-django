@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1>Hello {{ name }}, welcome to {{ world }}</h1><br><br>
+        <!-- You can do if conditionals like this -->
+        {% if non_existent_var %}
+        <h2>This non_existent_var is not supposed to exist and show</h2><br>
+        {% else %}
+        You should be seeing this because the var does not exist<br>
+        {% endif %}
+        <br>
+        <!-- Doing for loops -->
+        {% for i in list_of_names %}
+        This is one of my pets: {{ i }}<br>
+        {% endfor %}
+        <br>
+    </body>
+</html>
+
